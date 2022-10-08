@@ -1,0 +1,239 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "width": 500,
+  "height": 400,
+  "style": "cell",
+  "data": [
+    {
+      "name": "source_0",
+      "url": "https://raw.githubusercontent.com/dbuc0004/FIT3179/main/soccerleaguegoalsum.csv",
+      "format": {"type": "csv", "delimiter": ","},
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "Country_selection == null || datum.Country == Country_selection"
+        },
+        {"type": "filter", "expr": "datum.Goals > 0"}
+      ]
+    },
+    {
+      "name": "data_0",
+      "source": "source_0",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Goals\"]) && isFinite(+datum[\"Goals\"])"
+        }
+      ]
+    },
+    {
+      "name": "data_1",
+      "source": "source_0",
+      "transform": [
+        {
+          "type": "stack",
+          "groupby": ["Year", "Country"],
+          "field": "Goals",
+          "sort": {"field": [], "order": []},
+          "as": ["Goals_start", "Goals_end"],
+          "offset": "zero"
+        },
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Goals\"]) && isFinite(+datum[\"Goals\"])"
+        }
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "name": "Country_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Brazil",
+          "England",
+          "France",
+          "Germany",
+          "Italy",
+          "Spain"
+        ],
+        "labels": [
+          "Show All",
+          "Brazil",
+          "England",
+          "France",
+          "Germany",
+          "Italy",
+          "Spain"
+        ],
+        "name": "Select a Country: "
+      }
+    }
+  ],
+  "marks": [
+    {
+      "name": "layer_0_marks",
+      "type": "text",
+      "style": ["text"],
+      "from": {"data": "data_0"},
+      "encode": {
+        "update": {
+          "align": {"value": "right"},
+          "baseline": {"value": "middle"},
+          "dx": {"value": 10},
+          "dy": {"value": -15},
+          "fontSize": {"value": 11.5},
+          "fontStyle": {"value": "italic"},
+          "fill": {"value": "black"},
+          "opacity": [
+            {"test": "datum['Goals'] > 300", "value": 1},
+            {"value": 0}
+          ],
+          "tooltip": {
+            "signal": "{\"Country\": isValid(datum[\"Country\"]) ? datum[\"Country\"] : \"\"+datum[\"Country\"], \"Year\": isValid(datum[\"Year\"]) ? datum[\"Year\"] : \"\"+datum[\"Year\"], \"Goals\": format(datum[\"Goals\"], \"\")}"
+          },
+          "description": {
+            "signal": "\"Year: \" + (isValid(datum[\"Year\"]) ? datum[\"Year\"] : \"\"+datum[\"Year\"]) + \"; Goals: \" + (format(datum[\"Goals\"], \"\")) + \"; Country: \" + (isValid(datum[\"Country\"]) ? datum[\"Country\"] : \"\"+datum[\"Country\"])"
+          },
+          "x": {
+            "scale": "x",
+            "field": "Year",
+            "offset": {"scale": "xOffset", "field": "Country", "band": 0.5}
+          },
+          "y": {"scale": "y", "field": "Goals"},
+          "text": {"signal": "format(datum[\"Goals\"], \"\")"}
+        }
+      }
+    },
+    {
+      "name": "layer_1_marks",
+      "type": "rect",
+      "style": ["bar"],
+      "from": {"data": "data_1"},
+      "encode": {
+        "update": {
+          "fill": {"scale": "color", "field": "Country"},
+          "opacity": {"value": 0.6},
+          "tooltip": {
+            "signal": "{\"Country\": isValid(datum[\"Country\"]) ? datum[\"Country\"] : \"\"+datum[\"Country\"], \"Year\": isValid(datum[\"Year\"]) ? datum[\"Year\"] : \"\"+datum[\"Year\"], \"Goals\": format(datum[\"Goals\"], \"\")}"
+          },
+          "ariaRoleDescription": {"value": "bar"},
+          "description": {
+            "signal": "\"Year: \" + (isValid(datum[\"Year\"]) ? datum[\"Year\"] : \"\"+datum[\"Year\"]) + \"; Goals: \" + (format(datum[\"Goals\"], \"\")) + \"; Country: \" + (isValid(datum[\"Country\"]) ? datum[\"Country\"] : \"\"+datum[\"Country\"])"
+          },
+          "x": {
+            "scale": "x",
+            "field": "Year",
+            "offset": {"scale": "xOffset", "field": "Country"}
+          },
+          "width": {"scale": "xOffset", "band": 1},
+          "y": {"scale": "y", "field": "Goals_end"},
+          "y2": {"scale": "y", "field": "Goals_start"}
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "band",
+      "domain": {
+        "fields": [
+          {"data": "data_0", "field": "Year"},
+          {"data": "data_1", "field": "Year"}
+        ],
+        "sort": true
+      },
+      "range": [0, {"signal": "width"}],
+      "paddingInner": 0.2,
+      "paddingOuter": 0.2
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": {
+        "fields": [
+          {"data": "data_0", "field": "Goals"},
+          {"data": "data_1", "field": "Goals_start"},
+          {"data": "data_1", "field": "Goals_end"}
+        ]
+      },
+      "range": [{"signal": "height"}, 0],
+      "nice": true,
+      "zero": true
+    },
+    {
+      "name": "xOffset",
+      "type": "band",
+      "domain": {
+        "fields": [
+          {"data": "data_0", "field": "Country"},
+          {"data": "data_1", "field": "Country"}
+        ],
+        "sort": true
+      },
+      "range": [0, {"signal": "bandwidth('x')"}]
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": ["Brazil", "England", "France", "Germany", "Italy", "Spain"],
+      "range": [
+        "#fd7f6f",
+        "#7eb0d5",
+        "#b2e061",
+        "#bd7ebe",
+        "#ffb55a",
+        "#ffee65"
+      ]
+    }
+  ],
+  "axes": [
+    {
+      "scale": "y",
+      "orient": "left",
+      "gridScale": "x",
+      "grid": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "title": "Year",
+      "labelAlign": "right",
+      "labelAngle": 270,
+      "labelBaseline": "middle",
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "title": "Goals",
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0
+    }
+  ],
+  "legends": [
+    {
+      "fill": "color",
+      "symbolType": "square",
+      "title": "Country",
+      "encode": {"symbols": {"update": {"opacity": {"value": 0.6}}}}
+    }
+  ],
+  "config": {}
+}
