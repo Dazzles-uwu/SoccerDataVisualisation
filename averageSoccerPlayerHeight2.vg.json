@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
+  "width": 450,
   "height": 450,
   "title": "Average Height of Soccer Players by Countries",
   "projection": {"type": "equalEarth"},
