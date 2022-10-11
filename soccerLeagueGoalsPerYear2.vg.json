@@ -1,0 +1,116 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/dbuc0004/FIT3179/main/soccerleaguegoalsum.csv"
+  },
+  "params": [
+    {
+      "name": "Country_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Brazil",
+          "England",
+          "France",
+          "Germany",
+          "Italy",
+          "Spain"
+        ],
+        "labels": [
+          "Show All",
+          "Brazil",
+          "England",
+          "France",
+          "Germany",
+          "Italy",
+          "Spain"
+        ],
+        "name": "Country Selection: "
+      }
+    },
+    {
+      "name": "Goals_Above",
+      "value": 50,
+      "bind": {
+        "input": "range",
+        "min": 50,
+        "max": 350,
+        "step": 25,
+        "name": "Minimum Goals: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "Country_selection == null || datum.Country == Country_selection"
+    },
+    {"filter": "datum.Goals > Goals_Above"}
+  ],
+  "encoding": {
+    "x": {"field": "Year", "type": "nominal", "axis": {"labelAngle": 0}},
+    "y": {"field": "Goals", "type": "quantitative"},
+    "xOffset": {"field": "Country"}
+  },
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "color": {
+          "field": "Country",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Brazil",
+              "England",
+              "France",
+              "Germany",
+              "Italy",
+              "Spain"
+            ],
+            "range": [
+              "#fd7f6f",
+              "#7eb0d5",
+              "#b2e061",
+              "#bd7ebe",
+              "#ffb55a",
+              "#ffee65"
+            ]
+          }
+        },
+        "opacity": {"value": 0.6},
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+          {"field": "Year", "type": "nominal"},
+          {"field": "Goals", "type": "quantitative"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": 10,
+        "dy": -10,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "Goals", "type": "quantitative"},
+        "color": {"value": "black"},
+        "opacity": {
+          "condition": {"test": "datum['Goals'] > 300", "value": 1},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+          {"field": "Year", "type": "nominal"},
+          {"field": "Goals", "type": "quantitative"}
+        ]
+      }
+    }
+  ]
+}
