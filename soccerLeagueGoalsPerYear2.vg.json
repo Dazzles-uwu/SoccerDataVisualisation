@@ -37,7 +37,7 @@
       "bind": {
         "input": "range",
         "min": 50,
-        "max": 300,
+        "max": 350,
         "step": 25,
         "name": "Minimum Goals: "
       }
