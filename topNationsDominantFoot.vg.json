@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/dbuc0004/FIT3179/main/playersPreferredFoot.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.PreferredFoot == 'Left' ? -datum.PlayerAmount : datum.PlayerAmount",
+      "as": "signed_foot"
+    },
+    {
+      "filter": "datum.Country == 'Germany' || datum.Country == 'Brazil' || datum.Country == 'England' || datum.Country == 'France' || datum.Country == 'Italy' || datum.Country == 'Spain'"
+    }
+  ],
+  "encoding": {
+    "y": {"field": "Country", "axis": null},
+    "x": {
+      "aggregate": "sum",
+      "field": "signed_foot",
+      "title": "Amount of Players"
+    }
+  },
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "color": {
+          "field": "PreferredFoot",
+          "scale": {"range": ["#675193", "#ca8861"]},
+          "legend": {"orient": "top", "title": "Dominant Foot of Top Nations"},
+          "title": "Preferred Foot"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": 10,
+        "dy": -5,
+        "fontSize": 14,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "Country", "type": "nominal"},
+        "opacity": {
+          "condition": {"test": "datum['Country']", "value": 1},
+          "value": 0
+        }
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}, "axis": {"grid": false}}
+}
