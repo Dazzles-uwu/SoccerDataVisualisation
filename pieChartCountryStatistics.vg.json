@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 300,
-  "height": 300,
+  "width": 220,
+  "height": 220,
   "title": "Top Country's average player Statistics according to FIFA",
   "data": {
     "url": "https://raw.githubusercontent.com/dbuc0004/FIT3179/main/countryPlayerStatistics.csv"
