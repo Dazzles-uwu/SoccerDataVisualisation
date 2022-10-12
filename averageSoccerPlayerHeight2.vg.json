@@ -4,7 +4,7 @@
   "height": 220,
   "title": "Average Height of Soccer Players by Countries",
   "projection": {"type": "equalEarth"},
-  "background": "whitesmoke",
+  "background": "white",
   "layer": [
     {
       "data": {
