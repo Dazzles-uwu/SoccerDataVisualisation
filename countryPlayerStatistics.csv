@@ -1,164 +1,37 @@
-Country,Pace,Shooting,Passing,Dribbling,Defending,Physicality
-Afghanistan,82,60,55,68,31,43
-Albania,68,53,57,64,50,66
-Algeria,69,60,64,70,52,67
-Andorra,60,37,52,53,60,74
-Angola,78,55,58,66,47,63
-Antigua and Barbuda,78,45,56,62,60,71
-Argentina,68,57,61,66,51,66
-Armenia,67,58,56,65,44,66
-Australia,67,48,54,59,48,64
-Austria,67,53,58,62,51,66
-Azerbaijan,70,53,53,62,45,59
-Barbados,73,60,56,62,30,59
-Belarus,70,58,56,65,31,61
-Belgium,68,55,61,66,50,64
-Belize,63,58,59,64,61,70
-Benin,71,60,58,66,44,69
-Bermuda,74,70,63,70,44,62
-Bhutan,83,60,55,64,36,58
-Bolivia,66,50,55,60,50,60
-Bosnia and Herzegovina,64,56,60,63,54,70
-Brazil,70,59,62,67,52,67
-Bulgaria,67,51,54,59,48,63
-Burkina Faso,73,50,56,64,50,64
-Burundi,74,50,53,62,46,60
-Côte d'Ivoire,72,52,57,64,52,67
-Cameroon,70,53,58,65,53,71
-Canada,69,51,56,62,49,64
-Cape Verde Islands,70,58,59,66,48,69
-Central African Republic,62,57,61,64,55,69
-Chad,80,67,55,66,24,68
-Chile,66,51,57,62,50,64
-China PR,65,47,51,55,48,62
-Chinese Taipei,75,62,64,68,50,65
-Colombia,70,53,57,63,50,66
-Comoros,79,56,62,68,53,62
-Congo,69,61,55,64,43,69
-Congo DR,75,56,59,67,49,67
-Costa Rica,74,59,61,67,49,67
-Croatia,66,55,59,63,54,69
-Cuba,68,60,63,69,53,65
-Curacao,71,61,59,66,47,71
-Cyprus,65,45,52,58,43,57
-Czech Republic,71,60,63,68,54,70
-Denmark,68,53,57,62,51,66
-Dominican Republic,73,62,56,68,32,58
-Ecuador,70,51,56,61,49,62
-Egypt,68,61,62,70,50,70
-El Salvador,58,57,59,61,55,68
-England,68,51,56,61,50,64
-Equatorial Guinea,71,57,62,68,52,66
-Eritrea,47,67,64,65,39,69
-Estonia,65,46,53,60,51,58
-Ethiopia,69,61,61,70,57,51
-Faroe Islands,63,47,51,55,59,67
-Fiji,90,72,66,73,46,79
-Finland,65,53,58,62,49,64
-France,68,54,60,65,52,65
-Gabon,70,56,61,66,59,71
-Gambia,75,55,55,64,43,64
-Georgia,69,58,60,66,46,65
-Germany,68,53,57,63,50,65
-Ghana,75,54,57,65,49,65
-Gibraltar,83,57,57,66,29,63
-Greece,70,56,60,64,53,67
-Grenada,70,48,53,60,56,72
-Guam,64,48,61,62,63,68
-Guatemala,62,41,56,58,61,55
-Guinea,68,52,55,62,49,66
-Guinea Bissau,74,55,57,64,51,68
-Guyana,71,45,51,58,46,57
-Haiti,70,50,53,61,49,65
-Honduras,72,63,63,68,48,70
-Hong Kong,67,45,54,53,45,56
-Hungary,69,56,59,64,47,65
-Iceland,65,56,58,61,49,67
-India,67,41,45,52,40,58
-Indonesia,63,43,47,55,29,43
-Iran,70,60,62,68,50,69
-Iraq,72,63,62,67,51,68
-Israel,70,61,61,67,41,63
-Italy,68,57,61,67,54,65
-Jamaica,74,56,58,65,48,69
-Japan,67,53,58,62,48,63
-Jordan,71,55,54,66,39,62
-Kazakhstan,71,62,67,69,58,67
-Kenya,75,50,53,60,48,66
-Korea DPR,32,59,67,66,47,60
-Korea Republic,66,50,55,60,49,64
-Kosovo,67,54,56,63,47,66
-Kyrgyzstan,77,62,56,66,32,67
-Latvia,62,49,52,58,39,66
-Lebanon,63,50,48,53,48,76
-Liberia,80,56,60,70,44,68
-Libya,73,62,67,74,50,67
-Lithuania,67,51,55,58,43,66
-Luxembourg,65,51,60,62,54,67
-Madagascar,69,46,61,62,66,73
-Malawi,77,73,50,70,21,64
-Malaysia,71,55,54,67,31,56
-Mali,71,54,59,66,54,69
-Malta,65,52,53,60,48,67
-Mauritania,66,48,56,62,56,67
-Mauritius,65,41,54,57,65,76
-Mexico,67,54,59,64,53,63
-Moldova,61,57,60,62,52,69
-Montenegro,68,58,60,64,51,70
-Montserrat,70,50,52,59,48,65
-Morocco,69,59,62,69,50,65
-Mozambique,66,50,60,68,71,73
-Namibia,79,58,64,70,43,68
-Netherlands,67,55,60,65,52,66
-New Zealand,69,54,57,62,49,66
-Niger,75,55,52,61,41,63
-Nigeria,76,59,57,67,44,68
-North Macedonia,70,61,59,67,44,62
-Northern Ireland,65,53,56,61,49,63
-Norway,67,52,56,61,50,64
-Palestine,70,61,57,65,28,57
-Panama,70,57,57,65,45,65
-Papua New Guinea,86,56,57,68,25,51
-Paraguay,66,53,56,62,49,63
-Peru,67,53,57,62,49,62
-Philippines,77,53,58,67,57,63
-Poland,68,52,55,60,47,64
-Portugal,69,57,62,67,53,65
-Puerto Rico,72,44,54,61,46,56
-Republic of Ireland,64,49,53,58,48,62
-Romania,68,52,56,59,47,63
-Russia,70,59,63,67,50,65
-Saint Kitts and Nevis,68,43,51,59,51,66
-Saint Lucia,78,34,49,55,62,72
-Saudi Arabia,67,46,52,57,46,60
-Scotland,67,53,57,62,51,65
-Senegal,70,56,57,64,49,70
-Serbia,65,57,60,64,52,69
-Sierra Leone,79,57,53,67,40,64
-Slovakia,68,58,62,66,50,68
-Slovenia,68,59,62,66,50,68
-South Africa,71,53,59,65,52,61
-South Sudan,75,46,37,51,27,55
-Spain,67,58,63,67,53,65
-Sudan,81,58,52,65,26,62
-Suriname,69,62,64,68,53,68
-Sweden,67,52,57,61,47,64
-Switzerland,69,55,59,64,51,66
-Syria,62,71,69,70,46,73
-Tanzania,80,71,66,71,31,73
-Thailand,70,54,60,64,45,56
-Togo,75,57,57,66,43,67
-Trinidad and Tobago,69,45,52,59,52,67
-Tunisia,70,57,61,67,47,61
-Turkey,67,55,59,65,50,63
-Uganda,68,53,55,62,48,71
-Ukraine,71,58,62,66,51,66
-United Arab Emirates,68,51,55,62,46,60
-United States,67,51,56,61,48,64
-Uruguay,67,54,58,63,51,65
-Uzbekistan,71,55,60,62,55,68
-Venezuela,66,51,55,59,46,61
-Vietnam,65,61,58,65,45,65
-Wales,68,50,56,61,51,64
-Zambia,75,62,53,65,39,65
-Zimbabwe,75,55,56,64,47,66
+Country,Skills,Value
+Brazil,Pace,70
+Brazil,Shooting,59
+Brazil,Passing,62
+Brazil,Dribbling,67
+Brazil,Defending,52
+Brazil,Physicality,67
+England,Pace,68
+England,Shooting,51
+England,Passing,56
+England,Dribbling,61
+England,Defending,50
+England,Physicality,64
+France,Pace,68
+France,Shooting,54
+France,Passing,60
+France,Dribbling,65
+France,Defending,52
+France,Physicality,65
+Germany,Pace,68
+Germany,Shooting,53
+Germany,Passing,57
+Germany,Dribbling,63
+Germany,Defending,50
+Germany,Physicality,65
+Italy,Pace,68
+Italy,Shooting,57
+Italy,Passing,61
+Italy,Dribbling,67
+Italy,Defending,54
+Italy,Physicality,65
+Spain,Pace,67
+Spain,Shooting,58
+Spain,Passing,63
+Spain,Dribbling,67
+Spain,Defending,53
+Spain,Physicality,65
