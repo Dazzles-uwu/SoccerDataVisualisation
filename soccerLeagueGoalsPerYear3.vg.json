@@ -50,7 +50,7 @@
     {"filter": "datum.Goals > Goals_Above"}
   ],
   "encoding": {
-    "x": {"field": "Year"},
+    "x": {"field": "Year", "type": "nominal", "axis": {"labelAngle": 0}},
     "y": {"field": "Goals", "type": "quantitative"},
     "xOffset": {"field": "Country"},
     "color": {
