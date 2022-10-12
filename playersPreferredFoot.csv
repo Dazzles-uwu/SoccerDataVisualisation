@@ -1,0 +1,289 @@
+Country,PreferredFoot,PlayerAmount
+Afghanistan, Right,1
+Albania, Left,10
+Albania, Right,39
+Algeria, Left,18
+Algeria, Right,35
+Andorra, Right,1
+Angola, Left,4
+Angola, Right,13
+Antigua and Barbuda, Left,1
+Antigua and Barbuda, Right,2
+Argentina, Left,225
+Argentina, Right,730
+Armenia, Right,7
+Australia, Left,62
+Australia, Right,204
+Austria, Left,80
+Austria, Right,239
+Azerbaijan, Left,2
+Azerbaijan, Right,6
+Barbados, Right,1
+Belarus, Left,1
+Belarus, Right,3
+Belgium, Left,78
+Belgium, Right,235
+Belize, Left,1
+Benin, Left,1
+Benin, Right,9
+Bermuda, Right,1
+Bhutan, Right,1
+Bolivia, Left,38
+Bolivia, Right,113
+Bosnia and Herzegovina, Left,17
+Bosnia and Herzegovina, Right,53
+Brazil, Left,260
+Brazil, Right,653
+Bulgaria, Left,5
+Bulgaria, Right,20
+Burkina Faso, Left,3
+Burkina Faso, Right,13
+Burundi, Left,1
+Burundi, Right,8
+Côte d'Ivoire, Left,27
+Côte d'Ivoire, Right,84
+Cameroon, Left,17
+Cameroon, Right,49
+Canada, Left,22
+Canada, Right,53
+Cape Verde Islands, Left,1
+Cape Verde Islands, Right,21
+Central African Republic, Left,1
+Central African Republic, Right,2
+Chad, Right,2
+Chile, Left,40
+Chile, Right,122
+China PR, Left,46
+China PR, Right,331
+Chinese Taipei, Right,2
+Colombia, Left,65
+Colombia, Right,257
+Comoros, Left,4
+Comoros, Right,4
+Congo, Left,3
+Congo, Right,12
+Congo DR, Left,14
+Congo DR, Right,41
+Costa Rica, Left,10
+Costa Rica, Right,13
+Croatia, Left,47
+Croatia, Right,111
+Cuba, Left,1
+Cuba, Right,2
+Curacao, Left,1
+Curacao, Right,10
+Cyprus, Left,5
+Cyprus, Right,18
+Czech Republic, Left,22
+Czech Republic, Right,83
+Denmark, Left,77
+Denmark, Right,229
+Dominican Republic, Right,4
+Ecuador, Left,42
+Ecuador, Right,138
+Egypt, Left,2
+Egypt, Right,9
+El Salvador, Right,4
+England, Left,434
+England, Right,1284
+Equatorial Guinea, Left,1
+Equatorial Guinea, Right,3
+Eritrea, Right,1
+Estonia, Right,2
+Ethiopia, Right,1
+Faroe Islands, Left,2
+Faroe Islands, Right,1
+Fiji, Right,1
+Finland, Left,16
+Finland, Right,47
+France, Left,261
+France, Right,726
+Gabon, Left,3
+Gabon, Right,9
+Gambia, Left,9
+Gambia, Right,18
+Georgia, Left,7
+Georgia, Right,19
+Germany, Left,265
+Germany, Right,949
+Ghana, Left,30
+Ghana, Right,98
+Gibraltar, Right,1
+Greece, Left,24
+Greece, Right,69
+Grenada, Left,2
+Grenada, Right,4
+Guam, Right,1
+Guatemala, Left,1
+Guatemala, Right,1
+Guinea, Left,6
+Guinea, Right,27
+Guinea Bissau, Left,4
+Guinea Bissau, Right,19
+Guyana, Left,1
+Guyana, Right,6
+Haiti, Right,10
+Honduras, Left,4
+Honduras, Right,8
+Hong Kong, Right,2
+Hungary, Left,9
+Hungary, Right,39
+Iceland, Left,15
+Iceland, Right,43
+India, Left,41
+India, Right,172
+Indonesia, Right,1
+Iran, Left,4
+Iran, Right,17
+Iraq, Right,4
+Israel, Left,2
+Israel, Right,21
+Italy, Left,87
+Italy, Right,252
+Jamaica, Left,11
+Jamaica, Right,26
+Japan, Left,98
+Japan, Right,446
+Jordan, Left,1
+Jordan, Right,2
+Kazakhstan, Left,1
+Kazakhstan, Right,2
+Kenya, Left,2
+Kenya, Right,5
+Korea DPR, Right,1
+Korea Republic, Left,58
+Korea Republic, Right,265
+Kosovo, Left,11
+Kosovo, Right,35
+Kyrgyzstan, Right,1
+Latvia, Left,1
+Latvia, Right,6
+Lebanon, Left,1
+Lebanon, Right,1
+Liberia, Left,3
+Liberia, Right,3
+Libya, Left,1
+Libya, Right,2
+Lithuania, Right,8
+Luxembourg, Left,5
+Luxembourg, Right,11
+Madagascar, Left,3
+Madagascar, Right,5
+Malawi, Right,1
+Malaysia, Right,2
+Mali, Left,15
+Mali, Right,44
+Malta, Left,1
+Malta, Right,2
+Mauritania, Left,2
+Mauritania, Right,2
+Mauritius, Right,1
+Mexico, Left,88
+Mexico, Right,267
+Moldova, Left,4
+Moldova, Right,4
+Montenegro, Left,5
+Montenegro, Right,18
+Montserrat, Right,5
+Morocco, Left,28
+Morocco, Right,75
+Mozambique, Left,1
+Mozambique, Right,3
+Namibia, Left,2
+Namibia, Right,1
+Netherlands, Left,114
+Netherlands, Right,325
+New Zealand, Left,12
+New Zealand, Right,31
+Niger, Right,3
+Nigeria, Left,18
+Nigeria, Right,110
+North Macedonia, Left,8
+North Macedonia, Right,18
+Northern Ireland, Left,17
+Northern Ireland, Right,60
+Norway, Left,83
+Norway, Right,294
+Palestine, Left,2
+Panama, Left,5
+Panama, Right,11
+Papua New Guinea, Right,1
+Paraguay, Left,51
+Paraguay, Right,144
+Peru, Left,36
+Peru, Right,121
+Philippines, Left,2
+Philippines, Right,4
+Poland, Left,70
+Poland, Right,333
+Portugal, Left,94
+Portugal, Right,283
+Puerto Rico, Left,1
+Puerto Rico, Right,1
+Republic of Ireland, Left,97
+Republic of Ireland, Right,263
+Romania, Left,84
+Romania, Right,254
+Russia, Left,20
+Russia, Right,71
+Saint Kitts and Nevis, Right,5
+Saint Lucia, Right,1
+Saudi Arabia, Left,88
+Saudi Arabia, Right,267
+Scotland, Left,90
+Scotland, Right,199
+Senegal, Left,22
+Senegal, Right,105
+Serbia, Left,32
+Serbia, Right,95
+Sierra Leone, Left,3
+Sierra Leone, Right,7
+Slovakia, Left,12
+Slovakia, Right,50
+Slovenia, Left,14
+Slovenia, Right,40
+South Africa, Left,20
+South Africa, Right,43
+South Sudan, Right,5
+Spain, Left,295
+Spain, Right,796
+Sudan, Right,3
+Suriname, Left,3
+Suriname, Right,9
+Sweden, Left,83
+Sweden, Right,304
+Switzerland, Left,42
+Switzerland, Right,154
+Syria, Right,2
+Tanzania, Right,1
+Thailand, Left,1
+Thailand, Right,5
+Togo, Left,1
+Togo, Right,11
+Trinidad and Tobago, Left,2
+Trinidad and Tobago, Right,5
+Tunisia, Left,12
+Tunisia, Right,20
+Turkey, Left,87
+Turkey, Right,205
+Uganda, Left,1
+Uganda, Right,7
+Ukraine, Left,23
+Ukraine, Right,45
+United Arab Emirates, Left,4
+United Arab Emirates, Right,20
+United States, Left,74
+United States, Right,337
+Uruguay, Left,74
+Uruguay, Right,210
+Uzbekistan, Left,1
+Uzbekistan, Right,5
+Venezuela, Left,37
+Venezuela, Right,174
+Vietnam, Left,1
+Wales, Left,24
+Wales, Right,109
+Zambia, Left,2
+Zambia, Right,8
+Zimbabwe, Left,4
+Zimbabwe, Right,8
