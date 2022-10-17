@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 220,
+  "height": 220,
+  "title": "Top Country's average player Statistics according to FIFA",
+  "data": {
+    "url": "https://raw.githubusercontent.com/dbuc0004/FIT3179/main/countryPlayerStatistics.csv"
+  },
+  "params": [
+    {
+      "name": "Country_selection",
+      "value": "Brazil",
+      "bind": {
+        "input": "select",
+        "options": ["Brazil", "England", "France", "Germany", "Italy", "Spain"],
+        "labels": ["Brazil", "England", "France", "Germany", "Italy", "Spain"],
+        "name": "Country Selection: "
+      }
+    }
+  ],
+  "encoding": {
+    "theta": {"field": "Value", "type": "quantitative", "stack": true},
+    "color": {"field": "Skills", "type": "nominal", "legend": null}
+  },
+  "transform": [
+    {
+      "filter": "Country_selection == null || datum.Country == Country_selection"
+    }
+  ],
+  "layer": [
+    {"mark": {"type": "arc", "outerRadius": 90, "innerRadius": 20}},
+    {
+      "mark": {"type": "text", "radius": 150},
+      "encoding": {"text": {"field": "Skills", "type": "nominal"}}
+    },
+    {
+      "mark": {"type": "text", "radius": 110},
+      "encoding": {"text": {"field": "Value", "type": "quantitative"}}
+    }
+  ],
+  "config": {}
+}
