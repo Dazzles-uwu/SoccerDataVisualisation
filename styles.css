@@ -6,6 +6,10 @@ h1 {
     font-weight: 900;
 }
 
+#toolong {
+    margin-right: 35px;
+}
+
 body {
     background-color: lightgray;
 }
