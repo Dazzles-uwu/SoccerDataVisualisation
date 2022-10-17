@@ -106,7 +106,7 @@
         "longitude": {"field": "longitude", "type": "quantitative"},
         "latitude": {"field": "latitude", "type": "quantitative"},
         "size": {"value": 110},
-        "color": {"value": "black"},
+        "color": {"value": "red"},
         "tooltip": [
           {"field": "country", "type": "nominal", "title": "Country"},
           {"field": "Height", "type": "quantitative", "title": "Height (cm)"}
